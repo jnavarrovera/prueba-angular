@@ -1,0 +1,31 @@
+<mat-form-field appearance="fill" class="name-search">
+  <mat-label>Buscar por nombre</mat-label>
+  <input matInput type="text" [(ngModel)]="searchName" (keyup)="search()" />
+  <button
+    *ngIf="searchName"
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="searchName=''"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+<a mat-raised-button color="accent" [routerLink]="'/public/heroes/new'">
+  Añadir Héroe <mat-icon>person_add</mat-icon>
+</a>
+<mat-list>
+  <app-hero-item
+    *ngFor="let hero of (facade.heroes$|async)"
+    [hero]="hero"
+    (action)="onItemAction($event)"
+  ></app-hero-item>
+</mat-list>
+<mat-paginator
+  [length]="pagination.total"
+  [pageSize]="pagination.per_page"
+  [pageSizeOptions]="[3,5, 10, 25, 100]"
+  aria-label="Select page"
+  (page)="changePage($event)"
+>
+</mat-paginator>

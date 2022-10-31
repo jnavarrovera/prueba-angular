@@ -1,0 +1,11 @@
+<mat-list-item *ngIf="hero">
+  <span matLine><label>Nombre:</label> {{ hero.name }}</span>
+  <span matLine><label>Alias:</label> {{ hero.alias }}</span>
+  <span matLine><label>Ciudad:</label> {{ hero.city }}</span>
+  <button mat-icon-button (click)="onClickAction('edit')">
+    <mat-icon>edit</mat-icon>
+  </button>
+  <button mat-icon-button color="warn" (click)="onClickAction('delete')">
+    <mat-icon>delete</mat-icon>
+  </button>
+</mat-list-item>

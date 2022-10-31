@@ -1,0 +1,12 @@
+<div class="notification-container">
+  <div class="title-container">
+    <mat-icon>{{ getIcon() }}</mat-icon
+    ><span class="title">{{ data.title }}</span>
+  </div>
+  <div class="message-container">
+    {{ data.msg }}
+  </div>
+  <div *ngIf="data.output === 'notification'" class="button-container">
+    <button mat-button (click)="onClickClose()">Cerrar</button>
+  </div>
+</div>

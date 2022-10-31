@@ -1,0 +1,35 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Peter Parker",
+      "alias": "Spiderman",
+      "city": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Matt Murdock",
+      "alias": "Daredevil",
+      "city": "New York"
+    },
+    {
+      "id": 3,
+      "name": "Steve Rogers",
+      "alias": "Capitán América",
+      "city": "New York"
+    },
+    {
+      "id": 4,
+      "name": "Bruce Wayne",
+      "alias": "Batman",
+      "city": "Gotham"
+    },
+    {
+      "id": 5,
+      "name": "Clark Kent",
+      "alias": "Superman",
+      "city": "Metrópolis"
+    }
+  ]
+
+}

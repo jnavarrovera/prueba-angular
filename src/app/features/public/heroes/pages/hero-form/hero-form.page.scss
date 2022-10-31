@@ -1,0 +1,16 @@
+:host {
+  .hero-form {
+    display: flex;
+    flex-flow: wrap row;
+    gap: 2rem;
+    align-items: center;
+
+    .hero-field {
+      width: 100%;
+
+      &.half {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<form [formGroup]="heroForm" (ngSubmit)="save()" class="hero-form">
+  <mat-form-field appearance="fill" class="hero-field">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Clark Kent" formControlName="name" required appUppercase/>
+    <mat-error *ngIf="name.invalid">{{getErrorMessage(name)}}</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="hero-field half">
+    <mat-label>Alias</mat-label>
+    <input matInput placeholder="Superman" formControlName="alias" />
+    <mat-error *ngIf="alias.invalid">{{getErrorMessage(alias)}}</mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="hero-field half">
+    <mat-label>Ciudad</mat-label>
+    <input matInput placeholder="Metrópolis" formControlName="city" required />
+    <mat-error *ngIf="city.invalid">{{getErrorMessage(city)}}</mat-error>
+  </mat-form-field>
+  <button mat-raised-button color="accent" type="submit">Guardar</button>
+</form>

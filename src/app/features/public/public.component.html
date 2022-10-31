@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="mat-elevation-z6">
+    <img src="assets/world2meet.svg" class="brand-logo" (click)="goHome()" />
+    <h2>Prueba Angular</h2>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>{{ titleService.getTitle() | async }}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="page-container">
+  <router-outlet></router-outlet>
+</div>

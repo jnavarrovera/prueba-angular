@@ -1,0 +1,27 @@
+.notification-container {
+  .title-container {
+    display: flex;
+    align-items: center;
+
+    mat-icon {
+      margin-right: 0.5rem;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: medium;
+    }
+  }
+
+  .message-container {
+    text-align: justify;
+    font-size: small;
+    margin-top: 0.5rem;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+  }
+}

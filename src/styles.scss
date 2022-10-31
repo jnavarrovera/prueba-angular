@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page-container {
+  padding: 4rem;
+}
+
+.notification-error {
+  background-color: #f44336; // TODO variable warn
+  color: white;
+}
+
+.notification-success {
+  background-color: #69f0ae; // TODO variable accent
+  color: white;
+}
+
+.table-loader-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center
+}
